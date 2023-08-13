@@ -101,7 +101,7 @@ void carregue_continue_jogo(char quadro[9][9], char *nome_arquivo) {
 
 	fclose(arquivo);
 	printf("Jogo anterior carregado com sucesso!\n");
-} 
+}
 
 /* -----------------------------------------------------------------------------
  * CARREGAR NOVO JOGO
@@ -447,11 +447,6 @@ void resolver_um_passo(char quadro[9][9]) {
 /* -----------------------------------------------------------------------------
  * SALVAR JOGADA BINARIO
  * Salva o estado atual do quadro no arquivo binario
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-/* -----------------------------------------------------------------------------
- * SALVAR JOGADA BINARIO
- * Salva o estado atual do quadro no arquivo binário
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 void salvar_jogada_bin(FILE *fb, char quadro[9][9]) {
