@@ -119,7 +119,7 @@ void carregue_carregue_novo_jogo(char quadro[9][9], char *nome_arquivo) {
 
 	for (i = 0; i < 9; i++) {
 		for (j = 0; j < 9; j++) {
-			if (fscanf(arquivo, "%d", &quadro[i][j]) != 1) {
+			if (fscanf(arquivo, " %d ", &quadro[i][j]) != 1) {
 				printf("Erro ao ler o arquivo.\n");
 				fclose(arquivo);
 				return;
