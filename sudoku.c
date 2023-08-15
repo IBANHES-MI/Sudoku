@@ -341,7 +341,8 @@ void jogar() {
 
 			printf("Entre com a posicao e o valor (linha, coluna, valor): ");
 			scanf("%d %d %d", &x, &y, &valor);
-
+              x--;
+              y--;
 
 			if (e_valido(quadro, x, y, valor)) {
 				quadro[x][y] = valor;
